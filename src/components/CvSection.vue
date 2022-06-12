@@ -12,10 +12,15 @@
           >
             <p>{{ subsection.title }}</p>
             <p>({{ subsection.date }})</p>
-            <i v-if="subsection.link" class="bi bi-link-45deg" role="img" aria-label="link"></i>
+            <i
+              v-if="subsection.link"
+              class="bi bi-link-45deg"
+              role="img"
+              aria-label="link"
+            ></i>
           </a>
-          <ul v-for="item in subsection.description" :key="item">
-            <li>
+          <ul class="cv-subsection-dectription-list">
+            <li v-for="item in subsection.description" :key="item">
               <p>{{ item }}</p>
             </li>
           </ul>
@@ -42,15 +47,21 @@ export default defineComponent({
 ul {
   list-style-type: none;
 }
+
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   p {
     text-decoration: none;
   }
   &:visited {
-    color: initial;
+    color: inherit;
   }
 }
+
 .link {
   cursor: pointer;
 
@@ -60,15 +71,16 @@ a {
     }
   }
 }
+
 .cv-section {
   padding: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .cv-section-title {
   @extend .content;
   font-weight: 700;
-  text-align: center;
-  padding: 0 0 1rem 0;
+  font-size: 2rem;
 }
 
 .cv-section-content {
@@ -87,7 +99,17 @@ a {
   display: flex;
   flex-flow: row wrap;
   gap: 1ch;
-  font-weight: 600;
-  font-size: 1.15em;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.cv-subsection-dectription-list {
+  li {
+    padding: 0 !important;
+    p {
+      font-size: 1.25rem;
+      letter-spacing: +0.3px;
+    }
+  }
 }
 </style>

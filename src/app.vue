@@ -10,7 +10,11 @@
 <style lang="scss">
 body {
   margin: 0;
-  background-color: #323232;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: hsl(0, 0%, 5%);
 }
 
 #topContainer {

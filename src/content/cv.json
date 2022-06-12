@@ -2,7 +2,10 @@
   "name": "Mehmet Salih Arsan",
   "socials": {
     "email": "m_salih_arslan@hotmail.com",
-    "github": { "username": "msaliharslan", "link": "https://github.com/msaliharslan" },
+    "github": {
+      "username": "msaliharslan",
+      "link": "https://github.com/msaliharslan"
+    },
     "linkedin": {
       "username": "Mehmet Salih Arslan",
       "link": "https://www.linkedin.com/in/mehmet-salih-arslan-a99ba5110/"
@@ -79,11 +82,11 @@
           "description": ["M.S., Physics"]
         },
         {
-          "title": "Middle East Technical University(METU)",
+          "title": "Middle East Technical University (METU)",
           "date": "September 2016 - present",
           "description": [
-            "B.S., Electrical and Electronics Engineering(3.37/4.00) (2016 - 2021)",
-            "B.S., Physics(3.43/4.00) (2018 - present) (One course short of degree)"
+            "B.S., Electrical and Electronics Engineering (3.37/4.00) (2016 - 2021)",
+            "B.S., Physics (3.43/4.00) (2018 - present) (One course short of degree)"
           ]
         },
         {
@@ -92,12 +95,12 @@
           "description": ["High School (95.42/100)"]
         },
         {
-          "title": "Science and Art Institute(BILSEM)",
+          "title": "Science and Art Institute (BILSEM)",
           "date": "2007 - 2016",
           "description": [
             "State educational institution for gifted students",
             " Tokat Bilim ve Sanat Merkezi (2007 - 2012)",
-            "Eskişehir Emine-Emir Şahbaz Bilim ve Sanat Merkezi(2012 - 2016)"
+            "Eskişehir Emine-Emir Şahbaz Bilim ve Sanat Merkezi (2012 - 2016)"
           ]
         }
       ]

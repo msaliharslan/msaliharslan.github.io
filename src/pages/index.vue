@@ -1,10 +1,10 @@
 <template>
   <main style="padding: 100px 0">
+    <h1 class="page-title content">My resume</h1>
     <cv-section
-      v-for="(section, index) in cv.sections"
+      v-for="section in cv.sections"
       :key="section.section"
       :data="section"
-      :style="{ 'background-color': colors[index % colors.length] }"
     ></cv-section>
   </main>
   <cv-footer :data="cv.socials"></cv-footer>
@@ -16,21 +16,9 @@ import { Cv } from "../types/cv-types";
 import data from "../content/cv.json";
 
 export default defineComponent({
-  data(): { cv: Cv; colors: Array<string> } {
+  data(): { cv: Cv } {
     return {
       cv: null,
-      colors: [
-        "#32b007",
-        "#009e52",
-        "#008a73",
-        "#007580",
-        "#006075",
-        "#2e4756",
-        "#B01F19",
-        "#A8B010",
-        "#6919B0",
-        "#10B04A",
-      ],
     };
   },
   created() {
@@ -38,3 +26,11 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+h1 {
+  font-size: 2.83rem;
+  line-height: 1.6;
+  padding: 2rem 0;
+}
+</style>

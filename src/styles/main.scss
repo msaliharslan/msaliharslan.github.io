@@ -1,7 +1,13 @@
 @use "variables" as vars;
-* {
+html {
   box-sizing: border-box;
-  margin: 0;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .icon {

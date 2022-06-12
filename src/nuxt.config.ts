@@ -2,6 +2,7 @@ import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  ssr: false,
   typescript: {
     shim: false,
     strict: true,
@@ -12,8 +13,8 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-            @use '~/assets/style/variables' as *;
-            @use '~/assets/style/main.scss'; 
+            @use '~/styles/variables' as *;
+            @use '~/styles/main.scss'; 
             `,
         },
       },
