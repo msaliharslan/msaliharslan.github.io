@@ -1,6 +1,6 @@
 <template>
   <main style="padding: 100px 0">
-    <h1 class="page-title content">My resume</h1>
+    <h1 class="page-title content">Mehmet Salih Arslan</h1>
     <cv-section
       v-for="section in cv.sections"
       :key="section.section"

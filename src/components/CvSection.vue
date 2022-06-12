@@ -99,7 +99,7 @@ a {
   display: flex;
   flex-flow: row wrap;
   gap: 1ch;
-  font-weight: 500;
+  font-weight: 550;
   font-size: 1.25rem;
 }
 
