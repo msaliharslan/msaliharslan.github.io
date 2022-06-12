@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v3.3.0
 
       # Build static site
-      - name: Run a multi-line script
+      - name: Generate static pages
         run: |
              cd $GITHUB_WORKSPACE/src
              npm ci
@@ -37,12 +37,14 @@ jobs:
         run: |
              pwd
              echo $GITHUB_WORKSPACE
+             ls $GITHUB_WORKSPACE
+             ls $GITHUB_WORKSPACE/src
              
       # Upload artifact
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@main
         with:
-          path: $GITHUB_WORKSPACE/src/dist
+          path: $GITHUB_WORKSPACE/src/.output/public
 
   deploy:
     runs-on: ubuntu-latest
