@@ -33,11 +33,16 @@ jobs:
              npm ci
              npx nuxi generate
              
+      - name: Print paths
+        run: |
+             pwd
+             echo $GITHUB_WORKSPACE
+             
       # Upload artifact
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@main
         with:
-          path: src/dist
+          path: $GITHUB_WORKSPACE/src/dist
 
   deploy:
     runs-on: ubuntu-latest
