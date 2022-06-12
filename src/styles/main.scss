@@ -1,0 +1,32 @@
+@use "variables" as vars;
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.icon {
+  width: vars.$icon-size;
+  height: vars.$icon-size;
+  margin: vars.$icon-margin;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  i {
+    font-size: vars.$icon-size;
+    color: black;
+  }
+}
+
+.content {
+  width: vars.$content-width;
+  max-width: vars.$content-max-width;
+  margin: auto;
+}

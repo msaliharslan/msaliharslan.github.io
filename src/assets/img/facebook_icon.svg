@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="165"
+   height="165"
+   version="1.1"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 4365.6249 4365.6249"
+   id="svg8958"
+   sodipodi:docname="facebook_icon.svg"
+   inkscape:version="1.2-beta (1b65182, 2022-04-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview8960"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.1469907"
+     inkscape:cx="172.8"
+     inkscape:cy="172.8"
+     inkscape:window-width="1861"
+     inkscape:window-height="1025"
+     inkscape:window-x="59"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_x0020_1" />
+  <defs
+     id="defs8949">
+    <style
+       type="text/css"
+       id="style8947">  .fil0 {fill:#F0F0F0} .fil1 {fill:#011627;fill-rule:nonzero}  </style>
+  </defs>
+  <g
+     id="Layer_x0020_1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <metadata
+       id="CorelCorpID_0Corel-Layer" />
+    <g
+       id="_2744503357600"
+       style="fill:#000000">
+      <path
+         class="fil1"
+         d="m 1769.26,1717.317 h -466.5141 v 517.4435 l 466.5141,1.0186 c 46.8551,0 85.5615,37.6878 85.5615,85.5615 l 1.0186,1845.6843 H 2372.265 V 2321.3406 c 0,-47.8737 38.7064,-86.5801 86.5801,-86.5801 h 604.0236 V 1717.317 h -604.0236 c -47.8737,0 -86.5801,-38.7064 -86.5801,-86.5801 0,-222.0525 0,-384.0083 14.2602,-509.2948 15.2789,-139.54677 48.8923,-232.23837 118.1564,-296.40957 2.0372,-1.0186 4.0744,-3.0557 6.1116,-5.0929 60.0968,-52.9667 139.5467,-79.45 249.5544,-91.6731 81.4872,-9.1673 180.2904,-11.2045 302.5211,-11.2045 v -517.4435 c -299.4653,0 -529.6666,2.0372 -701.8082,22.409 -173.1602,21.3904 -286.2237,61.1154 -356.5063,138.5282 -72.3199,80.4686 -108.9891,206.7737 -128.3423,401.3243 -21.3904,206.7737 -21.3904,490.96007 -21.3904,868.85687 0,47.8737 -38.7064,86.5801 -85.5615,86.5801 z m -552.0756,-173.1602 h 465.4954 c 0,-337.1532 2.0372,-595.87487 22.409,-798.57427 23.4276,-232.2384 72.3199,-390.1198 172.1417,-500.1274 101.8589,-113.0635 247.5172,-168.067297 463.4582,-194.550697 199.6436,-24.4461 460.4025,-24.4461 807.7415,-24.4461 47.8738,0 86.5802,38.7064 86.5802,86.580097 v 689.5852 c 0,47.8737 -38.7064,86.5801 -86.5802,86.5801 -158.8999,0 -281.1307,0 -369.748,10.1859 -73.3384,8.1487 -123.2493,22.4089 -153.807,48.8923 l -3.0558,3.0557 c -35.6506,32.5949 -53.9852,91.67307 -64.1711,189.45767 -11.2045,96.766 -12.2231,229.1826 -12.2231,403.3615 h 603.005 c 47.8738,0 86.5802,38.7064 86.5802,86.5801 v 690.6037 c 0,46.8551 -38.7064,85.5615 -86.5802,85.5615 h -603.005 v 1845.6843 h -1.0186 c 0,47.8738 -38.7064,86.5802 -85.5615,86.5802 L 1769.26,4338.148 c -46.8552,0 -85.5616,-37.6878 -85.5616,-85.5616 l -1.0186,-1845.6843 h -465.4954 c -47.8737,0 -86.5801,-38.7064 -86.5801,-85.5615 v -690.6037 c 0,-47.8737 38.7064,-86.5801 86.5801,-86.5801 z"
+         id="path8954"
+         style="fill:#000000;stroke-width:1.01859" />
+    </g>
+  </g>
+</svg>

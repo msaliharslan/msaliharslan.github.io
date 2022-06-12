@@ -1,0 +1,200 @@
+{
+  "name": "Mehmet Salih Arsan",
+  "socials": {
+    "email": "m_salih_arslan@hotmail.com",
+    "github": {
+      "username": "msaliharslan",
+      "link": "https://github.com/msaliharslan"
+    },
+    "linkedin": {
+      "username": "Mehmet Salih Arslan",
+      "link": "https://www.linkedin.com/in/mehmet-salih-arslan-a99ba5110/"
+    },
+    "location": "Munich / Germany"
+  },
+  "languages": [
+    {
+      "language": "Turkish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Proficient"
+    }
+  ],
+  "technicalSkills": [
+    "Python",
+    "C",
+    "C++",
+    "OpenCv",
+    "FreeRTOS",
+    "Qt",
+    "Matlab",
+    "Latex",
+    "ARM assembly",
+    "Javascript",
+    "Vue Js",
+    "Django"
+  ],
+  "softSkills": [
+    "Team worker",
+    "Observer",
+    "Adaptable",
+    "Respectful",
+    "Calm",
+    "Analytical thinker"
+  ],
+
+  "sections": [
+    {
+      "section": "Work Experience",
+      "subsections": [
+        {
+          "title": "Mynaric",
+          "date": "November 2021 - present",
+          "description": ["Embedded Software Developer - Working Student"]
+        },
+        {
+          "title": "GCLAB Mühendislik",
+          "date": "November 2019 - October 2021",
+          "description": [
+            "Embedded Software Developer (November 2019 - October 2021)",
+            "Embedded Software Intern (July 2019 - September 2019)",
+            "Working on embedded real time software applications for IMU sensor projects, mainly using freeRTOS also working on the related GUI using QT framework"
+          ]
+        },
+        {
+          "title": "STM",
+          "date": "June 2019 - July 2019",
+          "description": [
+            "Computer Vision Intern",
+            "Worked on researching for a time efficient way for calculating homography matrices using CUDA, OpenCV C++"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Education",
+      "subsections": [
+        {
+          "title": "Technical University of Munich (TUM)",
+          "date": "October 2021 - present",
+          "description": ["M.S., Physics"]
+        },
+        {
+          "title": "Middle East Technical University (METU)",
+          "date": "September 2016 - present",
+          "description": [
+            "B.S., Electrical and Electronics Engineering (3.37/4.00) (2016 - 2021)",
+            "B.S., Physics (3.43/4.00) (2018 - present) (One course short of degree)"
+          ]
+        },
+        {
+          "title": "Eskişehir Fatih Fen Lisesi",
+          "date": "2012 - 2016",
+          "description": ["High School (95.42/100)"]
+        },
+        {
+          "title": "Science and Art Institute (BILSEM)",
+          "date": "2007 - 2016",
+          "description": [
+            "State educational institution for gifted students",
+            " Tokat Bilim ve Sanat Merkezi (2007 - 2012)",
+            "Eskişehir Emine-Emir Şahbaz Bilim ve Sanat Merkezi (2012 - 2016)"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Projects",
+      "subsections": [
+        {
+          "title": "Focus Space",
+          "date": "February 2021 - present",
+          "link": "https://focusspace.app",
+          "description": [
+            "Co-founder & Full-stack developer",
+            "Web based project management and organizing app."
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Certificates",
+      "subsections": [
+        {
+          "title": "Introduction to Computer Science and Programming Using Python",
+          "date": "August 3, 2017",
+          "link": "https://courses.edx.org/certificates/95a538bbdd0e436ba1580d39fb7d93d0",
+          "description": ["Introductory level programming MOOC course"]
+        }
+      ]
+    },
+    {
+      "section": "University Student Societies",
+      "subsections": [
+        {
+          "title": "METU Robotics Society",
+          "date": "October 2016 - June 2019",
+          "description": [
+            "Organizer at International METU Robotics Days 2017, 2018, 2019",
+            "Coordinator of Search and Rescue category in 2018",
+            "Team member of METURONE"
+          ]
+        },
+        {
+          "title": "METU Rowing Team",
+          "date": "October 2017 - May 2018",
+          "description": ["Competed at national intercollegiate race"]
+        },
+        {
+          "title": "METU Green Campus Society",
+          "date": "October 2018 - February 2021",
+          "description": ["Board member"]
+        }
+      ]
+    },
+    {
+      "section": "Competitions",
+      "subsections": [
+        {
+          "title": "UAV guided ground vehicle at Teknofest",
+          "date": "20-23 September 2018",
+          "description": ["Worked on image stitching algorithms for METURONE"]
+        },
+        {
+          "title": "EBEC Ankara Engineering Design Competition",
+          "date": "22-23 December 2018",
+          "description": [
+            "Competed as a member of the Team O'PAMP in 2018",
+            "Designed a model amphibious vehicle"
+          ]
+        },
+        {
+          "title": "First Lego League",
+          "date": "2013 and 2014",
+          "description": [
+            "Competed as part of team ESBILSEM",
+            "Worked on robotics programming",
+            "Our team won the innovative solution award in 2014"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Honors and Awards",
+      "subsections": [
+        {
+          "title": "TUBITAK national physics olympiad",
+          "date": "2016",
+          "description": ["Bronze medal"]
+        },
+        {
+          "title": "National university entrance exam",
+          "date": "2016",
+          "description": ["Ranked in top 1000 among 2,000,000 students"]
+        }
+      ]
+    }
+  ]
+}
