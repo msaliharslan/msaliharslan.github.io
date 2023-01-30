@@ -1,5 +1,14 @@
 {
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "stylelint.validate": ["vue", "css", "scss", "sass", "postcss"],
+
   "liveServer.settings.root": "/src/dist"
 }

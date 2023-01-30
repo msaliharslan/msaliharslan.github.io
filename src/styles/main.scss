@@ -1,32 +1,64 @@
 @use "variables" as vars;
-html {
-  box-sizing: border-box;
-  font-size: 100%;
+@use "themes" as *;
+
+:root {
+  @media (prefers-color-scheme: light) {
+    &:not([data-theme]),
+    &[data-theme="light"] {
+      @include light-scheme;
+    }
+
+    &[data-theme="dark"] {
+      @include dark-scheme;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-theme]),
+    &[data-theme="dark"] {
+      @include dark-scheme;
+    }
+
+    &[data-theme="light"] {
+      @include light-scheme;
+    }
+  }
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-.icon {
-  width: vars.$icon-size;
-  height: vars.$icon-size;
-  margin: vars.$icon-margin;
-
-  img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  i {
-    font-size: vars.$icon-size;
-    color: black;
-  }
+html {
+  font-family: "Source Sans Pro", "Microsoft Yahei", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-y: scroll;
 }
 
-.content {
-  width: vars.$content-width;
-  max-width: vars.$content-max-width;
-  margin: auto;
+body {
+  margin: 0;
+  background: var(--main-bg);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  user-select: none;
+}
+
+%center,
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

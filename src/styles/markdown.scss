@@ -1,0 +1,164 @@
+%heading {
+  color: var(--heading-color);
+  font-weight: 400;
+  font-family: Lato, "Microsoft Yahei", sans-serif;
+
+  a {
+    color: inherit;
+    border: none;
+  }
+
+  a:hover {
+    color: inherit;
+    border: none;
+  }
+}
+
+%section {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+
+  &:focus {
+    outline: none; /* avoid outline in Safari */
+  }
+}
+
+%table-cell {
+  padding: 0.4rem 1ch;
+  font-size: 95%;
+  white-space: nowrap;
+}
+
+.markdown {
+  margin: 0 auto;
+  width: 80ch;
+  flex-shrink: 1;
+  height: fit-content;
+  font-size: 1.08rem;
+  text-align: justify;
+  overflow-wrap: break-word;
+
+  h1 {
+    @extend %heading;
+
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    @extend %heading;
+    @extend %section;
+
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    @extend %heading;
+    @extend %section;
+
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    @extend %heading;
+    @extend %section;
+
+    font-size: 1.15rem;
+  }
+
+  h5 {
+    @extend %heading;
+    @extend %section;
+
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  ol,
+  ul,
+  dl {
+    margin: 0 0 1rem;
+    padding: 0 0 0 2ch;
+  }
+
+  .contains-task-list {
+    list-style: none;
+  }
+
+  .task-list-item {
+    input[type="checkbox"] {
+      margin: 0 1ch 0 0;
+      color: var(--checkbox-color);
+    }
+
+    input[type="checkbox"]:checked {
+      color: var(--checkbox-checked-color);
+    }
+  }
+
+  blockquote {
+    margin: 0 0 1rem;
+    padding: 0 0 0 2ch;
+    border-left: 0.5ch solid var(--blockquote-border-color);
+  }
+
+  table {
+    min-width: 70%;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    thead {
+      border-top: 2px solid var(--tb-border-color);
+      border-bottom: 2px solid var(--tb-border-color);
+
+      th {
+        @extend %table-cell;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid var(--tb-border-color);
+
+        &:nth-child(2n) {
+          background-color: var(--tb-even-bg);
+        }
+
+        &:nth-child(2n + 1) {
+          background-color: var(--tb-odd-bg);
+        }
+
+        td {
+          @extend %table-cell;
+        }
+      }
+    }
+  }
+
+  a {
+    color: var(--link-color);
+    border-bottom: 1px solid var(--link-underline-color);
+  }
+
+  a:hover {
+    color: var(--link-hover-color);
+    border-bottom: 1px solid var(--link-hover-color);
+  }
+
+  img {
+    max-width: 95%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  iframe {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 0 2.5%;
+  }
+}

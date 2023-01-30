@@ -1,27 +1,64 @@
 <template>
-  <Head>
-    <Title> Mehmet Salih Arslan </Title>
-  </Head>
-  <div id="topContainer">
-    <NuxtPage />
-  </div>
+  <NuxtPage />
+
+  <button @click="toggleTheme" class="toggle-theme-button">
+    <i v-if="theme == 'dark'" class="bi bi-lightbulb-fill"></i>
+    <i v-else class="bi bi-lightbulb"></i>
+  </button>
 </template>
 
-<style lang="scss">
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Noto Sans", sans-serif;
-  line-height: 1.6;
-  background-color: #fff;
-  color: hsl(0, 0%, 5%);
-}
+<script lang="ts">
+import { defineComponent } from "vue";
 
-#topContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 100vh;
+export default defineComponent({
+  setup() {
+    const theme = useState("theme", () => "");
+
+    return {
+      theme,
+    };
+  },
+
+  mounted() {
+    if (window.matchMedia) {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.setAttribute("data-theme", "dark");
+        this.theme = "dark";
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        this.theme = "light";
+      }
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      this.theme = "dark";
+    }
+  },
+
+  methods: {
+    toggleTheme() {
+      const theme = document.documentElement.getAttribute("data-theme");
+
+      if (theme === "light") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        this.theme = "dark";
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        this.theme = "light";
+      }
+    },
+  },
+});
+</script>
+
+<style lang="scss">
+@use "@/node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.toggle-theme-button {
+  @include transition(all);
+
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 1.3rem;
 }
 </style>
