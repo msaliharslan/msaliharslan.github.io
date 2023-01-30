@@ -30,10 +30,6 @@ jobs:
           cd $GITHUB_WORKSPACE/src
           npm ci
           npm run generate
-          echo $GITHUB_WORKSPACE
-          ls -la $GITHUB_WORKSPACE/src
-          ls -la $GITHUB_WORKSPACE/src/.output/
-          ls -ls $GITHUB_WORKSPACE/src/.output/public
 
       # Upload artifact
       - name: Upload GitHub Pages artifact
@@ -58,5 +54,5 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1.0.5
+        uses: actions/deploy-pages@v1
         id: deployment
