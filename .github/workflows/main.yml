@@ -4,9 +4,9 @@ name: Deploy from Nuxt to Github Pages
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,7 +19,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       # Setup node
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.3.0
@@ -27,31 +27,35 @@ jobs:
       # Build static site
       - name: Generate static pages
         run: |
-             cd $GITHUB_WORKSPACE/src
-             npm ci
-             npm run generate
-             
+          cd $GITHUB_WORKSPACE/src
+          npm ci
+          npm run generate
+          echo $GITHUB_WORKSPACE
+          ls -la $GITHUB_WORKSPACE/src
+          ls -la $GITHUB_WORKSPACE/src/.output/
+          ls -ls $GITHUB_WORKSPACE/src/.output/public
+
       # Upload artifact
-      - name: Upload build artifacts
-        uses: actions/upload-pages-artifact@main
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v1.0.7
         with:
-          path: $GITHUB_WORKSPACE/src/.output/public
+          path: src/.output/public
 
   deploy:
     runs-on: ubuntu-latest
-    
+
     permissions:
       contents: read
       pages: write
       deployments: write
       id-token: write
-      
+
     environment:
-       name: github-pages
-       url: ${{ steps.deployment.outputs.page_url }}
-       
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     needs: build
-    
+
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1.0.5
