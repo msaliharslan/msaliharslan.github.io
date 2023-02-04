@@ -21,6 +21,8 @@
   overflow-y: scroll;
   flex: 1;
   display: flex;
-  padding: 2rem 0;
+  padding: 2rem 4ch;
+
+  @include transition(all);
 }
 </style>

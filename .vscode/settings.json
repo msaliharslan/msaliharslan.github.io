@@ -10,5 +10,6 @@
   "eslint.validate": ["javascript", "javascriptreact", "vue"],
   "stylelint.validate": ["vue", "css", "scss", "sass", "postcss"],
 
-  "liveServer.settings.root": "/src/dist"
+  "liveServer.settings.root": "/src/dist",
+  "liveServer.settings.port": 3000
 }

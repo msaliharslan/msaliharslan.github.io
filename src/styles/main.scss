@@ -1,4 +1,4 @@
-@use "variables" as vars;
+@use "mixins" as *;
 @use "themes" as *;
 
 :root {
@@ -34,8 +34,16 @@
 html {
   font-family: "Source Sans Pro", "Microsoft Yahei", sans-serif;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.6;
   overflow-y: scroll;
+
+  @include media("<sm") {
+    line-height: 1.2;
+  }
+
+  @include media("sm<md") {
+    line-height: 1.4;
+  }
 }
 
 body {

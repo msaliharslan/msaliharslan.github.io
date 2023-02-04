@@ -60,5 +60,13 @@ export default defineComponent({
   bottom: 1rem;
   left: 1rem;
   font-size: 1.3rem;
+
+  @include media("<lg") {
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: unset;
+    left: unset;
+    font-size: 1rem;
+  }
 }
 </style>

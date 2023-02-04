@@ -1,1 +1,26 @@
+@use "sass:map";
+
+$media-query-breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+$media-query-conditions: (
+  "<sm": "(max-width: #{map.get($media-query-breakpoints, "sm")})",
+  "<md": "(max-width: #{map.get($media-query-breakpoints, "md")})",
+  "<lg": "(max-width: #{map.get($media-query-breakpoints, "lg")})",
+  "<xl": "(max-width: #{map.get($media-query-breakpoints, "xl")})",
+  "<xxl": "(max-width: #{map.get($media-query-breakpoints, "xxl")})",
+  "sm<md": "(min-width: #{map.get($media-query-breakpoints, "sm") + 1}) and (max-width: #{map.get($media-query-breakpoints, "md")})",
+  "md<lg": "(min-width: #{map.get($media-query-breakpoints, "md") + 1}) and (max-width: #{map.get($media-query-breakpoints, "lg")})",
+  "lg<xl": "(min-width: #{map.get($media-query-breakpoints, "lg") + 1}) and (max-width: #{map.get($media-query-breakpoints, "xl")})",
+  "xl<xxl": "(min-width: #{map.get($media-query-breakpoints, "xl") + 1}) and (max-width: #{map.get($media-query-breakpoints, "xxl")})",
+  "sm<": "(min-width: #{map.get($media-query-breakpoints, "sm") + 1})",
+  "md<": "(min-width: #{map.get($media-query-breakpoints, "md") + 1})",
+  "lg<": "(min-width: #{map.get($media-query-breakpoints, "lg") + 1})",
+  "xl<": "(min-width: #{map.get($media-query-breakpoints, "xl") + 1})",
+  "xxl<": "(min-width: #{map.get($media-query-breakpoints, "xxl") + 1})",
+);
 
